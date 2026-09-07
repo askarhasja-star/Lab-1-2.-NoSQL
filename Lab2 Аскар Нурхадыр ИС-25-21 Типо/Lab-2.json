@@ -1,0 +1,59 @@
+{
+  "database": "GamingClubDB",
+  "collections": {
+    "Users": [
+      {
+        "user_id": "U104",
+        "name": "Аскар Нурхадыр",
+        "phone": "+7 700 123 45 67",
+        "email": "askar@example.com",
+        "registered_at": "2026-09-01"
+      }
+    ],
+
+    "Clubs": [
+      {
+        "club_id": "C01",
+        "name": "Cyber Arena",
+        "address": "Алматы, ул. Абая, 50",
+        "working_hours": "10:00-02:00",
+        "rating": 4.8
+      }
+    ],
+
+    "Computers": [
+      {
+        "computer_id": "PC207",
+        "club_id": "C01",
+        "number": 7,
+        "configuration": {
+          "processor": "Intel Core i5",
+          "ram": "16 GB",
+          "video_card": "RTX 4060"
+        },
+        "hourly_price": 1500
+      }
+    ],
+
+    "Bookings": [
+      {
+        "booking_id": "B10025",
+        "user_id": "U104",
+        "computer_id": "PC207",
+        "start_time": "2026-09-05T18:00:00",
+        "end_time": "2026-09-05T21:00:00",
+        "status": "confirmed"
+      }
+    ],
+
+    "Payments": [
+      {
+        "payment_id": "P50025",
+        "booking_id": "B10025",
+        "amount": 4500,
+        "payment_method": "Kaspi",
+        "status": "paid"
+      }
+    ]
+  }
+}

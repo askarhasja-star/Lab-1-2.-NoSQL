@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form Example</title>
+    </head>
+<body>
+<form>
+    <fieldset>
+        <legend>Форма регистрации</legend>
+        <label>
+            ФИО <input type="text">
+        </label>
+        <br/>
+        <label align-items: center>
+            Email <input type="email">
+        </label>
+        <br/>
+        <label>
+            Номер телефона <input type="tel">
+        </label>
+        <br/>
+        <label>
+            Город <input type="text">
+        </label>
+        <br/>
+        <label>
+            Дата рождения <input type="date">
+        </label>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Параметры доставки</legend>
+        <label>
+            Адрес <textarea name="address" rows="5" cols="20"></textarea>
+        </label>
+        <br/>
+        <label>
+            Почтовый индекс <input type="number">
+        </label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Предпочитаемый способ получения уведомлений</legend>
+        <input type="radio" name="skill" value="1" checked>По Email<br>
+        <input type="radio" name="skill" value="2">По телефону<br>
+        <input type="radio" name="skill" value="3">Не уведомлять меня<br>
+    </fieldset>
+    <input type="submit" name="submit" value="Отправить данные">
+</form>
+</body>
+</html>

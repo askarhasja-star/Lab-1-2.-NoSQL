@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form Example</title>
+    </head>
+<body>
+<form>
+    Enter Name: <input type="text" id="name" /><br/>
+    <input type="hidden" id="country" value=" codescracker.com" /><br/>
+    <input type="submit" onclick="alert('Hello ' +
+    document.getElementById('name').value+', Welcome to' +
+    document.getElementById('country').value)" value="submit">
+</form>
+</body>
+</html>

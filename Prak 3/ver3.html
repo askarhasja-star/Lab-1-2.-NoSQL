@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Layout Example</title>
+
+    <style>
+        #header {
+            background-color:red;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+
+        #nav {
+            line-height:30px;
+            background-color:silver;
+            height:300px;
+            width:20%;
+            float:left;
+            padding:5px;
+        }
+
+        #nav a {
+            cursor:pointer;
+            color:black;
+            text-decoration:none;
+        }
+
+        #nav a:hover {
+            color:red;
+        }
+
+        #section {
+            width:80%;
+            float:left;
+            padding:10px;
+            box-sizing:border-box;
+        }
+
+        #footer {
+            background-color:red;
+            color:white;
+            clear:both;
+            text-align:center;
+            padding:5px;
+        }
+
+        .content {
+            display:none;
+        }
+
+        .content img {
+            width:250px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="header">
+    <h2>HTML Layout</h2>
+</div>
+
+
+<div id="nav">
+
+    <a onclick="showText('basics')">HTML Basics</a><br>
+
+    <a onclick="showText('fonts')">HTML Fonts</a><br>
+
+    <a onclick="showText('list')">HTML List</a><br>
+
+    <a onclick="showText('links')">HTML Links</a><br>
+
+    <a onclick="showText('tables')">HTML Tables</a><br>
+
+    <a onclick="showText('forms')">HTML Forms</a><br>
+
+    <a onclick="showText('layout')">HTML Layout</a><br>
+
+</div>
+
+
+<div id="section">
+
+    <!-- HTML BASICS -->
+    <div id="basics" class="content">
+
+        <h2>HTML Basics</h2>
+
+        <p>
+            HTML is a markup language used to create web pages.
+            HTML uses different tags to structure the content of a webpage.
+        </p>
+
+        <p>
+            For example:
+        </p>
+
+        <code>
+            &lt;h1&gt;Hello World!&lt;/h1&gt;
+        </code>
+
+        <br><br>
+
+        <img src="C:\Users\Student\Desktop\HTML5_logo_and_wordmark.svg.webp" alt="HTML">
+
+        <p>
+            Подробнее можно узнать на
+            <a href="https://www.w3schools.com/html/" target="_blank">
+                W3Schools
+            </a>.
+        </p>
+
+    </div>
+
+
+    <!-- HTML FONTS -->
+    <div id="fonts" class="content">
+
+        <h2>HTML Fonts</h2>
+
+        <p>
+            HTML and CSS can be used to change the appearance
+            of text on a web page.
+        </p>
+
+        <p style="font-family:Arial;">
+            This text uses Arial font.
+        </p>
+
+        <p style="font-family:Georgia;">
+            This text uses Georgia font.
+        </p>
+
+        <p style="font-family:Courier New;">
+            This text uses Courier New font.
+        </p>
+
+    </div>
+
+
+    <!-- HTML LIST -->
+    <div id="list" class="content">
+
+        <h2>HTML List</h2>
+
+        <p>There are two common types of lists in HTML:</p>
+
+        <h3>Unordered list:</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered list:</h3>
+
+        <ol>
+            <li>Open the browser</li>
+            <li>Create HTML file</li>
+            <li>Write the code</li>
+            <li>Open the page</li>
+        </ol>
+
+    </div>
+
+
+    <!-- HTML LINKS -->
+    <div id="links" class="content">
+
+        <h2>HTML Links</h2>
+
+        <p>
+            Links allow users to move from one web page to another.
+        </p>
+
+        <a href="https://www.google.com" target="_blank">
+            Open Google
+        </a>
+
+        <br><br>
+
+        <a href="https://www.youtube.com" target="_blank">
+            Open YouTube
+        </a>
+
+    </div>
+
+</div>
+
+<div id="section">
+
+    <h2 id="about" onclick="showText()">About HTML Layout</h2>
+
+    <div id="text" style="display:none;">
+        <p>
+            In the tutorial of HTML layout, you will learn how to design or layout
+            your web page that looks more attractive and more interactive.
+            As you know that, everybody wants to visit a web page whose layout
+            is user friendly, in other word whose navigation, web page topic,
+            content, footer, all looks simple.
+        </p>
+    </div>
+
+</div>
+
+
+<div id="footer">
+    Copyright @ codescracker.com
+</div>
+
+
+<script>
+
+function showText(id) {
+
+    var contents = document.getElementsByClassName("content");
+
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+
+    document.getElementById(id).style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
